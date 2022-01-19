@@ -6,6 +6,6 @@ class HomeController extends Controller
 {
   public function index($request, $response)
   {
-    return $response->write('<h1>hello</h1> <br /> <p> Exemplo de String </p>');
+    return $this->container->view->render($response, 'index.twig');
   }
 }
