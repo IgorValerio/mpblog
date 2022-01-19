@@ -8,6 +8,4 @@ require __DIR__. '/../vendor/autoload.php';
 
 $app = new Slim\App();
 
-$app->get('/', function($request, $response) {
-  return 'Hello World!';
-});
+require __DIR__. '/routes.php';
